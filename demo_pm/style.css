@@ -1,0 +1,405 @@
+/* Общие стили */
+body.body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #121212;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Хедер */
+.header {
+  background: #1f1f1f;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.container_header1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 3rem;
+}
+.header_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 2px solid #444;
+  transition: transform 0.3s;
+}
+
+.header_img:hover {
+  transform: scale(1.05);
+}
+
+.header_text1 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.header_title2 {
+  font-size: 1.4em;
+  margin: 0;
+  color: #aaa;
+  text-align: center;
+}
+
+.header_text2 {
+  font-size: 1.2em;
+  color: #888;
+  margin-top: 4px;
+  margin-left: 4rem;
+}
+
+.header_list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+
+}
+
+.header_item {
+  margin: 0 15px;
+}
+
+.header_item a {
+  color: #ccc;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header_item a:hover {
+  background: #333;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_main {
+  background-color: #1f1f1f;
+  background: #222;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid #333;
+    margin: 20px auto;
+}
+
+.music_title {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+}
+
+.radio-header h1 {
+    color: #00a8ff;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.5);
+}
+
+.music_display {
+    background: #333;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 3px solid #333;
+    text-align: center;
+}
+
+.station-info {
+    margin-bottom: 25px;
+}
+
+.station-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    min-height: 40px;
+}
+
+.station-frequency {
+    font-size: 24px;
+    color: #222;
+    font-weight: 500;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.volume-control i {
+    font-size: 24px;
+    color: #222;
+}
+
+#volume-slider {
+    width: 70%;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    outline: none;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #222;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.music_controls {
+  margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.control-btn {
+    background: #242424;
+    border: none;
+    border-radius: 15%;
+    width: 13%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: auto;
+}
+
+.control-btn:hover {
+    background: #464646;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(92, 92, 92, 0.7);
+}
+
+.control-btn:active {
+    transform: scale(0.95);
+}
+
+.control-btn i {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.play-btn {
+    background: #242424;
+    width: 13%;
+    height: 26%;
+}
+
+.play-btn:hover {
+    background: #464646;
+}
+
+.stations-list {
+    background: #333;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.stations-list h3 {
+    color: aliceblue;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+.music-item {
+    background: #222;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+
+.music-item:hover {
+    background: rgba(0, 168, 255, 0.2);
+    border-color: #444;
+}
+
+.music-item.active {
+    background: #222;
+    border-color: #444;
+    box-shadow: 0 0 15px rgba(41, 41, 41, 0.5);
+}
+
+.music-item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.music-item-frequency {
+    color: #aaa;
+    font-size: 14px;
+}
+.music-item {
+  background: #222;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+.music-item-img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+     margin: 0 auto;
+}
+.music-item-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.music-item.active {
+    background: rgba(0,0,0,0.05);
+}
+.container_scrl{
+  display: flex;
+}
+
+.favorite-icon{
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin: 0;
+  background-color: #1f1f1f;
+  
+}
+
+.favorite-icon:hover{
+  background-color: #303030;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Футер */
+  .footer {
+    background: #1f1f1f;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer_list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  .btn_footer {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+
+  .btn_footer:hover {
+    background: #333;
+  }
+
+  .footer_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+    
+
+  .transition-slide {
+    animation: fadeIn 0.5s ease-out;
+  }
+  .footer_text{
+    width: 50px;
+    font-size: 10px;
+    margin-left: -3px;
+    color: #fff;
+  }
+  @media(max-width: 880px){
+    .container_main{
+      width: 80%;
+    }
+  }
+  @media(max-width: 550px){
+    .container_header1{
+      display: inline;
+      align-items: center;
+      justify-content: center;
+    }
+  }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pumpi</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Иконки для PWA -->
+    <link rel="icon" href="Логотип/Логотип2 .5.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href="icon-512.png" />
+</head>
+
+<body class="body">
+    <header class="header">
+
+        <div class="container_header1">
+            <div class="container_container1">
+                <img src="Логотип/Логотип2.png" alt="Лого" class="header_img">
+                <p class="header_text1">Pumpi</p>
+            </div>
+            <div class="container_header2">
+                <h2 class="header_title2">WANNA GOOD MUSIC</h2>
+                <p class="header_text2">then join us</p>
+            </div>
+            <ul class="header_list">
+                <li class="header_item"><a href="index.html">Главная</a></li>
+                <li class="header_item"><a href="favorites.html">Избранное</a></li>
+                <li class="header_item"><a href="about_us.html">О нас</a></li>
+                <li class="header_item"><a href="index_rd.html">Радио</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+    <body>
+        <main>
+            <div class="container_main">
+                <div class="music_title">
+                    <h1>Нейроволна</h1>
+                </div>
+
+                <div class="music_display">
+                    <div class="station-info">
+                        <div class="station-name" id="current-station">Название станции</div>
+                        <div class="station-frequency" id="current-frequency">FM 101.2</div>
+                    </div>
+                    <div class="volume-control">
+                        <i class="fas fa-volume-down"></i>
+                        <input type="range" id="volume-slider" min="0" max="100" value="70">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div class="music_controls">
+                        <button class="control-btn prev-btn" id="prev-btn">
+                            <i class="fas fa-backward"></i>
+                            <span>⏮</span>
+                        </button>
+
+                        <button class="control-btn play-btn" id="play-btn">
+                            <i class="fas fa-play" id="play-icon"></i>
+                            <span id="play-text"> ▶</span>
+                        </button>
+
+                        <button class="control-btn next-btn" id="next-btn">
+                            <i class="fas fa-forward"></i>
+                            <span>⏭</span>
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <div class="stations-list">
+                    <div class="container_scrl">
+                        <h3>Трекии в очереди:</h3>
+                    </div>
+
+                    <div class="container_stations" id="stations-container">
+                        <!-- Треки будут добавлены через JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <audio id="radio-player" preload="none"></audio>
+            <div class="container_stations" id="stations-container">
+                <!-- Треки будут добавлены через JavaScript -->
+            </div>
+        </main>
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <ul class="footer_list">
+                <li class="footer_item">
+                    <form action="index.html">
+                        <button class="btn_footer">
+                            <img src="Фото/Логотип2.png" alt="Главная" class="footer_img" />
+                            <p class="footer_text">Главная</p>
+                        </button>
+                    </form>
+                </li>
+                <li class="footer_item">
+                    <form action="favorites.html">
+                        <button class="btn_footer">
+                            <img src="Фото/like2.png" alt="Избранное" class="footer_img" />
+                            <p class="footer_text">Избранное</p>
+                        </button>
+                    </form>
+                </li>
+                <li class="footer_item">
+                    <form action="about_us.html">
+                        <button class="btn_footer">
+                            <img src="Фото/history2.png" alt="История" class="footer_img" />
+                            <p class="footer_text">О нас</p>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </footer>
+
+
+
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
